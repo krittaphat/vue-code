@@ -5,7 +5,7 @@
       <h1 class="title">
         vue-code
       </h1>
-      <div class="links">
+      <!-- <div class="links">
         <a
           href="https://nuxtjs.org/"
           target="_blank"
@@ -22,13 +22,24 @@
         >
           GitHub
         </a>
-      </div>
+      </div> -->
+      <b-button id="goToH2p" variant="outline-primary" @click="linkH2p">
+        h2p
+      </b-button>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import * as funWriteHtml from '@/pages/home/test'
+export default {
+	methods: {
+		linkH2p () {
+			return funWriteHtml.testAlert()
+		}
+	}
+
+}
 </script>
 
 <style>
